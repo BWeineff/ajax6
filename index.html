@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Cartoons</title>
+</head>
+
+<body>
+  <!-- <button data-animal="cat">meow</button>
+  <button data-animal="dog">woof</button>
+  <button data-animal="bird">chirp</button> -->
+<div class="container-fluid row">
+        <div class="col-sm-6 mx-auto">
+                <div class="jumbotron">
+                    <h3 class="display-6">CARTOON GIFs!!!!!!! Hooray</h3>
+                    <p class="lead">Click the different pre-selected cartoons to check out some sweet still images that you can turn into gifs at the click of the mouse button!</p>
+                    <hr class="my-6">
+                    <h6>Or you can enter in a cartoon of your own choosing below!</h6> 
+                    </br>
+                    <h6></h6>
+                </div>
+        </div>
+<div class='col-11'>
+  <div class="row" id="buttonsDiv"> <!-- topics are gunna go in here from array-->
+      
+  </div>
+  <div class="row">
+      <div class="col-lg-4 col-sm-12" id="formDiv"> <!-- the form goes here to add new topics-->
+        <form class="form-group" id="cartoon-form">
+                <label for="cartoon-input">Add a Cartoon to get cartoon gif'd!</label>
+                <input class="form-control" type="text" id="cartoon-input">
+                <br>
+          
+                <!-- Button triggers new input to be added to topics array-->
+                <input id="add-cartoon" type="submit" value="Add a Cartoon">
+        </form>
+      </div>
+      <div class="col-lg-8 col-sm-12" id="gifsDiv"> <!-- the gifs go in here -->
+          
+      </div>
+  </div>
+</div>
+</div>  
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./assets/app.js"></script>
+</html>
